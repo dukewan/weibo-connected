@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title> 新浪微博用户分布可视化 </title>
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="assets/opentip/opentip.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/tipsy/tipsy.css" />
+</head>
+<body>
+    <div class="myContainer">
+        <div class="row">
+            <div class="col-md-6 logo">
+                新浪微博用户数据可视化
+            </div>
+            <div class="col-md-6 form-inline" style="margin-top: 4px">
+                <input type="text"  class="form-control" id="searchText" placeholder="输入您想找的用户昵称">
+                <button class="btn btn-primary" id="searchBtn">搜索</button>
+            </div>
+        </div>
+        <svg id="map">
+        </svg>
+    </div>
+    <script src="assets/d3/d3.js"></script>
+    <script src="assets/d3/topojson.v1.min.js"></script>
+    <script src="assets/jquery/jquery-1.11.0.min.js"></script>
+    <script src="assets/opentip/opentip-jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/tipsy/jquery.tipsy.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
